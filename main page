@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My PBInfo Solutions</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    h1 { color: #2a7ae2; }
+    #searchBox { 
+      width: 60%; 
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 10px; }
+    a { color: #007b5e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .not-found {
+      color: #888;
+      font-style: italic;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>My PBInfo Solutions</h1>
+  <input type="text" id="searchBox" placeholder="Search for a problem...">
+  <ul id="problemsList">
+    <li><a href="https://your-link-to-solution1" target="_blank">1000: Suma numerelor</a></li>
+    <li><a href="https://your-link-to-solution2" target="_blank">1001: Maximul unui șir</a></li>
+    <li><a href="https://your-link-to-solution3" target="_blank">1002: Paritate</a></li>
+    <!-- Add more problems here -->
+  </ul>
+  <div id="notFound" class="not-found" style="display:none;">
+    No problems found!
+  </div>
+  <script>
+    const searchBox = document.getElementById('searchBox');
+    const problemsList = document.getElementById('problemsList');
+    const notFound = document.getElementById('notFound');
+    const problems = Array.from(problemsList.getElementsByTagName('li'));
+    searchBox.addEventListener('input', function() {
+      const query = this.value.toLowerCase();
+      let anyVisible = false;
+      problems.forEach(li => {
+        const text = li.textContent.toLowerCase();
+        if (text.includes(query)) {
+          li.style.display = '';
+          anyVisible = true;
+        } else {
+          li.style.display = 'none';
+        }
+      });
+      notFound.style.display = anyVisible ? 'none' : '';
+    });
+  </script>
+</body>
+</html>

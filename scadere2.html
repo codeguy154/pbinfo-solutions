@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 1258: scadere2</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>1258: scadere2</h1>
+  <h2>Statement</h2>
+  <p>
+    Cerința
+Se dau două numere naturale. Calculați diferenţa lor.
 
+Restricții și precizări
+cele două numere sunt mai mici decât 2.000.000.000
+se va scădea al doilea număr din primul
+Exemplu:
+Intrare
+
+5 3
+
+Ieșire
+
+2
+    
+  </p>
+  <h2>Solution</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{ int a,b,s;
+cin &gt;&gt; a&gt;&gt; b;
+s = a-b;
+cout &lt;&lt; s &lt;&lt;"\n";
+return 0;
+}
+  </code></pre>
+</body>
+</html>

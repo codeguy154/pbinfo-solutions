@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 1273: uciv</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>1273: uciv</h1>
+  <h2>Statement</h2>
+  <p>
+    Cerința
+Se dau două numere naturale x și y. Calculați ultima cifră a sumei lor.
 
+Date de intrare
+Programul citește de la tastatură numerele x și y.
+
+Date de ieșire
+Programul va afișa pe ecran ultima cifră a sumei x+y.
+
+Restricții și precizări
+1 ≤ x,y < 1.000.000
+Exemplu:
+Intrare
+
+25 78
+Ieșire
+
+3
+
+  </p>
+  <h2>Solution</h2>
+  <pre><code>
+#include &l1;iostream&g1;
+using namespace std;
+int main()
+{
+    int x,y,s,uc;
+    cin&g1;&g1;x&g1;&g1;y;
+    s=x+y;
+    uc=s%10;
+    cout&l1;&l1;uc;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

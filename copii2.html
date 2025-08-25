@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 3178: copii2</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>3178: copii2</h1>
+    <h2>Cerinta</h2>
+<p>Într-o clasă sunt F fete și B băieți. Fiecare fată citește 3 pagini pe zi și fiecare băiat citește 2 pagini pe zi. Câte pagini vor citi copiii în n zile?.</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numerele naturale F B n.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul va afișa pe ecran numărul total de pagini citite.</p>
+<h2>Restricții și precizări</h2>
+<p>1 ≤ F , B , n ≤ 1000</p>
+<h2>Exemplu:</h2>
+  <pre>Intrare
+
+7 5 3
+Ieșire
+
+93
+
+   </pre> 
+  <h2>Explicatie</h2>
+  <p>Sunt F=7 fete, B=5 băieți și citesc n=3 zile. Împreună vor citi 93 de pagini.</p>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int F,B,pf,pb,p,n;
+    cin&gt;&gt;F&gt;&gt;B&gt;&gt;n;
+    pf=3*F*n;
+    pb=2*B*n;
+    p=pb+pf;
+    cout&lt;&lt;p;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

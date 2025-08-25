@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 2263: camioane</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>2263: camioane</h1>
+    <h2>Cerinta</h2>
+<p>O firmă are două tipuri de camioane: camioane de tipul 1, care pot transporta câte t1 tone de marfă pe zi, și camioane de tipul 2, care pot transporta câte t2 tone de marfă pe zi.
+
+Știind că firma are n camioane de tipul 1 și m camioane de tipul 2, câte tone de marfă pot transporta camioanele firmei în z zile.</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numerele naturale t1 t2 n m z.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul va afișa pe ecran rezultatul.</p>
+<h2>Restricții și precizări</h2>
+<p>2 ≤ t1, t2 ≤ 100
+2 ≤ n, m ≤ 100
+2 ≤ z ≤ 30
+</p>
+<h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+3 5 4 2 5
+Ieșire
+
+110
+<h2>Explicatie</h2>
+  <p>Sunt 4 camioane de tipul 1, care pot transporta câte 3 tone de marfă și 2 camioane de tipul 2, care pot transporta câte 5 tone de marfă. Ele vor putea transporta în 5 zile 110 tone de marfă.</p>
+   </pre> 
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int t1, t2, n, m, z, result;
+    cin&gt;&gt;t1&gt;&gt;t2&gt;&gt;n&gt;&gt;m&gt;&gt;z;
+    result = n*t1*z+m*t2*z;
+    cout&lt;&lt;result;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

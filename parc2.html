@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 2240: animale</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>3179: parc2</h1>
+    <h2>Cerinta</h2>
+<p>Într-un parc sunt n alei. Pe fiecare alee sunt n arbori. Fiecare arbore are n crengi. Pe fiecare creanga sunt n cuiburi. În fiecare cuib sunt n păsări. Câte păsări sunt în parc?</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numărul natural n.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul va afișa pe ecran numărul de păsări din parc.</p>
+<h2>Restricții și precizări</h2>
+<p>1 ≤ n ≤ 50</p>
+<h2>Exemplu:</h2>
+  <pre>Exemplu:
+Intrare
+
+3
+Ieșire
+
+243
+
+   </pre> 
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+#include &lt;math.h&gt;
+using namespace std;
+int main()
+{
+    int n, pasari;
+    cin&gt;&gt;n;
+    pasari = pow (n,5);
+    cout&lt;&lt;pasari;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

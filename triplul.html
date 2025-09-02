@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 814: triplul</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>814: triplul</h1>
+    <h2>Cerinta</h2>
+<p>Fiind date două numere naturale x și y determinați valoarea care trebuie adunată la x pentru a obține triplul lui y.</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numerele x și y.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul va afișa pe ecran numărul care adunat la x va obține triplul lui y.</p>
+<h2>Restricții și precizări</h2>
+<p>1 ≤ x,y ≤ 100.000.000</p>
+<p>rezultatul poate fi negativ</p>
+<h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+5 12
+Ieșire
+
+31
+
+    </pre> 
+<h2>Explicatie</h2>
+  <p>31+5=12*3</p>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int x,y,d;
+    cin&gt;&gt;x&gt;&gt;y;
+    d=3*y-x;
+    cout&lt;&lt;d;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

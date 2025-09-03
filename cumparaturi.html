@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 3210: cumparaturi - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 3210: cumparaturi - solutie</h1>
+    <h2>Cerinta</h2>
+<p>O cutie cu bomboane costă B lei. Gigel are S lei. Determinați câte cutii cu bomboane poate cumpăra Gigel și câți lei trebuie să mai primească pentru a cumpăra încă o cutie.</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numerele naturale B S.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul afișează pe ecran numerele C P, separate printr-un spațiu, reprezentând numărul de cutii cu bomboane pe care Gigel le poate cumpăra cu S lei, respectiv suma necesară pentru a cumpăra încă o cutie.</p>
+<h2>Restricții și precizări</h2>
+<p>1 ≤ B,S ≤ 1.000.000.000</p>
+<h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+4 9
+Ieșire
+
+2 3
+
+    </pre> 
+<h2>Explicatie</h2>
+  <p>Gigel are 9 lei, iar o cutie cu bomboane costă 4 lei. Poate cumpăra 2 cutii, rămânând 1 leu. Pentru încă o cutie, Gigel are nevoie de încă 3 lei.</p>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int b,s,C,P;
+    cin&gt;&gt;b&gt;&gt;s;
+    C=s/b;
+    P=b-s%b;
+    cout&lt;&lt;C&lt;&lt;' '&lt;&lt;P;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

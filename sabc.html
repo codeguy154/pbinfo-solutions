@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 3978: sabc - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 3978: sabc - solutie</h1>
+  <p>Dacă x și y sunt două numere naturale cu x ≤ y, atunci notăm cu s(x,y) suma numerelor naturale cuprinse între x și y. De exemplu, s(3,6) = 3+4+5+6 = 18, iar s(7,7) = 7.</p>
+    <h2>Cerinta</h2>
+<p>Se dau numerele naturale a, b și c, unde a ≤ b ≤ c. Calculați s(a,b), s(b,c) și s(a,c).</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numerele naturale a, b și c.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul va afișa pe ecran, separate prin câte un spațiu, cele trei sume.</p>
+<h2>Restricții și precizări</h2>
+<p>1 ≤ a ≤ b ≤ c ≤ 10.000</p>
+<h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+3 10 20
+Ieșire
+
+52 165 207
+
+    </pre> 
+<h2>Explicatie</h2>
+  <p>Suma numerelor de la 3 la 10 este 52, suma numerelor de la 10 la 20 este 165, iar suma numerelor de la 3 la 20 este 207.</p>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+ {
+    int a,b,c,sab,sbc,sac;
+    cin&gt;&gt;a&gt;&gt;b&gt;&gt;c;
+    sab=b*(b+1)/2-(a-1)*a/2;
+    sbc=c*(c+1)/2-(b-1)*b/2;
+    sac=c*(c+1)/2-(a-1)*a/2;
+    cout&lt;&lt;sab&lt;&lt;" "&lt;&lt;sbc&lt;&lt;" "&lt;&lt;sac;
+    return 0;
+
+}
+  </code></pre>
+</body>
+</html>

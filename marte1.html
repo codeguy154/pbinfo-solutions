@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 3180: marte1 - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 3180: marte1 - solutie</h1>
+    <h2>Cerinta</h2>
+<p>Pe planeta Marte banii sunt altfel decât la noi. Există 3 tipuri de monede: primul tip de monedă valorează a lei marțieni, al doilea tip valorează b lei marțieni, iar al treilea tip de monedă valorează c lei marțieni. Marțianul Iggle are n monede de primul tip, m monede de al doilea tip și p monede de al treilea tip. Câți lei marțieni are Iggle?</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numerele naturale a b c, apoi numerele naturale n m p.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul va afișa pe ecran suma pe care o deține Iggle.</p>
+<h2>Restricții și precizări</h2>
+<p>1 ≤ a , b , c ≤ 1000</p>
+<p>1 ≤ n , m , p ≤ 10000</p>
+<h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+2 3 7
+4 2 2
+Ieșire
+
+28
+    
+ </pre> 
+<h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int a,b,c,n,m,p,Ig;
+    cin&gt;&gt;a&gt;&gt;b&gt;&gt;c&gt;&gt;n&gt;&gt;m&gt;&gt;p;
+    Ig=a*n+b*m+c*p;
+    cout&lt;&lt;Ig;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

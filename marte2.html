@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 3182: marte2 - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 3182: marte2 - solutie</h1>
+    <h2>Cerinta</h2>
+<p>Pe planeta Marte anul marțian durează z zile marțiene. Marțianul Iggle își serbează ziua de naștere și constată că a trăit n zile. Câte lumânări va avea tortul lui Iggle?</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numerele naturale z n.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul va afișa pe ecran numărul de lumânări de pe tortul lui Iggle.</p>
+<h2>Restricții și precizări</h2>
+<p>1 ≤ z ≤ 1.000</p>
+<p>1 ≤ n ≤ 1.000.000.000</p>
+<h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+7 56
+Ieșire
+
+8
+
+<h2>Explicatie</h2>
+<p>Anul marțian are 7 zile. Iggle a trăit 56 de zile, adică 8 ani, deci tortul va avea 8 lumânări.</p>
+ </pre> 
+<h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int z,n, l;
+    cin&gt;&gt;z&gt;&gt;n;
+    l= n/z;
+    cout&lt;&lt;l;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

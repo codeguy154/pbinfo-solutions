@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 3181: marte3 - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 3181: marte3 - solutie</h1>
+    <h2>Cerinta</h2>
+<p>Pe planeta Marte anul marțian durează x zile marțiene, iar o zi marțiană durează y ore. În fiecare oră, marțianului Iggle îi crește o antenă. După cât timp va avea Iggle n antene?</p>   
+  <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numerele naturale x y n.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul va afișa pe ecran trei numere naturale: a, z, h, pe rânduri diferite, reprezentând numărul de ani, zile și ore după care Iggle va avea n antene.</p>
+<h2>Restricții și precizări</h2>
+<p>1 ≤ x , y ≤ 1.000</p>
+<p>1 ≤ n ≤ 1.000.000.000</p>
+<h2>Exemplu:</h2>
+  <pre>
+Intrare
 
+5 3 100
+Ieșire
+
+6
+3
+1
+  
+</pre> 
+<h2>Explicatie</h2>
+<p>Anul marțian are 5 zile, iar ziua marțiană are 3 ore. Astfel, un an marțian va avea 5*3 = 15 ore. Atunci 100 de ore marțiene înseamnă 6 ani și încă 10 ore. Cele 10 ore înseamnă 3 zile și 1 oră.</p>
+<h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int x,y,n,a,z,h;
+    cin &gt;&gt; x &gt;&gt; y &gt;&gt; n;
+    a = n/(x*y);
+    z = (n-a*x*y)/y;
+    h = (n-a*x*y)%y;
+    cout &lt;&lt;a &lt;&lt;endl &lt;&lt; z &lt;&lt; endl&lt;&lt; h&lt;&lt; endl;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 2061: tren japonez - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 2061: tren japonez - solutie</h1>
+  <p>În Japonia trenurile pot suporta un număr de vagoane și marfă. Toate vagoanele au încărcături egale.</p>
+    <h2>Cerinta</h2>
+<p>Calculați încărcătura din fiecare vagon.</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numărul n de vagoane și  m marfa totală. Se garantează că m % n = 0</p>
+  <h2>Date de iesire</h2>
+  <p>Programul va afișa pe ecran numărul I, reprezentând încărcatura vagoanelor.</p>
+<h2>Restricții și precizări</h2>
+<p>1 ≤ n,m ≤ 1000000</p>
+<p>n ≤ m</p> 
+<h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+3 6
+Ieșire
+
+2
+   </pre> 
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int n,m,I;
+    cin&gt;&gt;n&gt;&gt;m;
+    I=m/n;
+    cout&lt;&lt;I;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

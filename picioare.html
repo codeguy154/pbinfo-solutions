@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 175: picioare - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 175: picioare - solutie</h1>
+    <h2>Cerinta</h2>
+<p>Într-o curte sunt G găini și O oi. Să se determine numărul de capete și numărul de picioare din curte.</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numerele G și O, reprezentând numărul de găini și numărul de oi din curte.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul afișează pe ecran numerele C și P, separate printr-un spațiu, reprezentând numărul de capete și numărul de picioare din curte.</p>
+<h2>Restricții și precizări</h2>
+<p>0 < G , O < 1.000.000</p>
+<h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+3 2
+Ieșire
+
+5 14
+   </pre> 
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int G,O,C,P;
+    cin&gt;&gt;G&gt;&gt;O;
+    C=G+O;
+    P=G*2+O*4;
+    cout&lt;&lt;C&lt;&lt;" "&lt;&lt;P;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

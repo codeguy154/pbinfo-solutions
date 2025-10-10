@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 2201: salut - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 2201: salut - solutie</h1>
+  <h2>Cerinta</h2>
+<p>Într-un grup sunt n prieteni. Când se întâlnesc se salută, fiecare dând mâna cu toți ceilalți. Câte strângeri de mână au loc?</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numărul n.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul va afișa pe ecran valoarea cerută.</p>
+<h2>Restricții și precizări</h2>
+<p>1 ≤ n ≤ 1.000.000.000</p>
+<h2>Exemplu:</h2>
+  <pre>
+Intrare
 
+3
+Ieșire
+
+3
+   </pre> 
+  <h2>Explicație</h2>
+  <p>Dacă cei trei prieteni sunt A B C, atunci au loc următoarele strângeri de mână: (A,B), (A,C) și (B,C).</p>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    long long int n;
+    cin&gt;&gt;n;
+    cout&lt;&lt;(n-1)*n/2;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

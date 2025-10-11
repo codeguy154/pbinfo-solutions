@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 2938: albina - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+    h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 2938: albina - solutie</h1>
+  <h2>Cerinta</h2>
+<p>Într-un stup, pe un fagure de miere infinit, trăiește o albină foarte harnică. Fagurele este alcătuit din celule hexagonale, fiecare celulă având șase vecini. În prima zi albina depune nectar într-o singură celulă. În fiecare din zilele următoarele, albina depune nectar în celulele vecine cu cele în care a fost deja depus nectar.</p>
+<img
+src="https://www.pbinfo.ro/resurse/9dc152/p-2600/2938-fagure.png">
+<p>Aflați în câte celule este depus nectar după n zile.</p>
+   <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numărul n.</p>
+  <h2>Date de iesire</h2>
+  <p>Programul va afișa pe ecran numărul C, reprezentând numărul de celule în care este depus nectar după n zile.</p>
+<h2>Restricții și precizări</h2>
+<p>1 ≤ n ≤ 1.000.000</p>
+<h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+4
+Ieșire
+
+37
+   </pre> 
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main ()
+{
+    long long int n,C;
+    cin&gt;&gt;n;
+    C=1+6*(n-1)*n/2;
+    cout&lt;&lt;C;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

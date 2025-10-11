@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 2764: invertedcolor - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+  h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 2764: invertedcolor - solutie</h1>
+  <p>Orice culoare poate fi reprezentată drept o combinație de intensități de roșu (RED), verde (GREEN) și albastru (BLUE). Calculatorul tău folosește, cel mai probabil, culori reprezentate pe 24 de biți, câte 8 rezervați fiecăreia dintre cele trei culori anterior menționate.
+
+Definim opusul unei culori (r, g, b) ca fiind (255 – r, 255 – g, 255 – b).</p>
+  <h2>Cerinta</h2>
+  <p>Dându-se o culoare, scrieți opusul acesteia.</p>
+  
+  <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură trei numere naturale, r, g și b.</p>
+  
+  <h2>Date de ieșire</h2>
+  <p>Programul va afișa pe ecran numărul numerele R, G și B, astfel încât acestea să reprezinte o culoare opusă celei inițiale.</p>
+
+  <h2>Restricţii şi precizări</h2>
+  <p>0 ≤ R, G, B, r, g, b ≤ 255</p>
+  <h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+0 92 254
+Ieșire
+
+255 163 1
+</pre>
+  <h2>Explicație</h2>
+  <p>R=255-0=255; G=255-92=163; B=255-254=1</p>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int r,g,b,R,G,B;
+    cin&gt;&gt;r&gt;&gt;g&gt;&gt;b;
+    R=255-r;
+    G=255-g;
+    B=255-b;
+    cout&lt;&lt;R&lt;&lt;" "&lt;&lt;G&lt;&lt;" "&lt;&lt;B;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

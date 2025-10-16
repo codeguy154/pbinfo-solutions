@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 2377: pisici - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+  h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 2377: pisici - solutie</h1>
+  <h2>Cerinta</h2>
+  <p>Se cunoaște faptul ca n pisici mănâncă n șoareci în n minute. Sa se determine în cat timp mănâncă m pisici m șoareci.</p>
+  
+  <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numerele n si m.</p>
+  
+  <h2>Date de ieşire</h2>
+  <p>Programul va afișa pe ecran numărul T, reprezentând timpul necesar pentru ca m pisici sa manance m soareci.</p>
+
+  <h2>Restricţii şi precizări</h2>
+  <p>1 ≤ n,m ≤ 100.000.000.000</p>
+  <h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+3 100
+Ieșire
+
+3
+</pre>
+  </p>
+  <h2>Solutie</h2>
+  <pre><code>
+ #include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    long long int n,m,T;
+    cin&gt;&gt;n&gt;&gt;m;
+    T=m/m*n;
+    cout&lt;&lt;T;
+    return 0;
+}
+   </code></pre>
+</body>
+</html>

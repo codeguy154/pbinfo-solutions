@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 102: cifre - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+  h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 102: cifre - solutie</h1>
+  <h2>Cerinta</h2>
+  <p>Să se scrie un program care citeşte de la tastatură un număr natural cu cel puţin două cifre şi determină suma dintre cifra zecilor şi cifra unităţilor numărului citit.</p>
+  
+  <h2>Date de intrare</h2>
+  <p>Programul va citi de la tastatură un număr natural n.</p>
+  
+  <h2>Date de ieşire</h2>
+  <p>Programul va afişa pe ecran un număr s, reprezentând suma dintre cifra zecilor şi cea a unităţilor numărului n.</p>
+
+  <h2>Restricţii şi precizări</h2>
+  <p>9 < n < 1.000.000.000</p>
+  <h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+2012
+Ieşire
+
+3
+</pre>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int n,s;
+    cin &gt;&gt; n;
+    s= n/10%10+n%10;
+    cout&lt;&lt;s;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

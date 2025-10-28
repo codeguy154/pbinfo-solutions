@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 4185: varsta - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+  h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 4185: varsta - solutie</h1>
+  <h2>Cerinta</h2>
+  <p>Gigel are a ani, iar tatăl lui are b ani. Peste câți ani raportul dintre vârsta lui Gigel și al tatălui său va fi egală cu c/d, unde c și d sunt dați.</p>
+  
+  <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numerele a, b, c și d.</p>
+  
+  <h2>Date de ieşire</h2>
+  <p>Programul va afișa pe ecran un număr cerut x, cu 2 zecimale exacte, fără rotunjire.</p>
+
+  <h2>Restricţii şi precizări</h2>
+  <p>1 ≤ a,b,c,d ≤ 1000000</p>
+  <p>x poate să fie negativ</p>
+  <h2>Exemplul 1:</h2>
+  <pre>
+Intrare
+
+5 25 1 2
+Ieșire
+
+15.00
+</pre>
+<h2>Exemplul 2:</h2>
+<pre>
+Intrare
+
+20 50 1 5
+Iesire
+
+-12.50
+</pre>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+int main()
+{
+    int a, b, c, d;
+    double x;
+    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d;
+    x = double (b*c-a*d)/(d-c);
+    x = x * 100;
+    x = int (x);
+    x = double (x)/100;
+    cout &lt;&lt; fixed &lt;&lt; setprecision(2) &lt;&lt; x;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

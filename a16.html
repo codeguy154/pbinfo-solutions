@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 2599: a16 - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+  h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 2599: a16 - solutie</h1>
+  <h2>Cerinta</h2>
+  <p>Scrieți un program care cere de la tastatură un număr a (de o cifră) și care afișează valoarea expresiei a^16. Aplicați de cât mai puține ori operatorul de înmulțire.</p>
+  
+  <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numărul a.</p>
+  
+  <h2>Date de ieşire</h2>
+  <p>Programul va afișa pe ecran valoarea calculată.</p>
+
+  <h2>Restricţii şi precizări</h2>
+  <p>0 ≤ a ≤ 9</p>
+  <h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+2
+Ieșire
+
+65536
+</pre>
+  </p>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int a;
+    long long int b;
+    cin &gt;&gt; a;
+    b=a;
+    for (int i=1; i&lt;16; i++)
+    b = b*a;
+    cout &lt;&lt; b;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

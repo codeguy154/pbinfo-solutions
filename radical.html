@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 1282: radical - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+  h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 1282: radical - solutie</h1>
+  <h2>Cerinta</h2>
+  <p>Se dă un număr. Să se afișeze rădăcina sa pătrată.</p>
+  
+  <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numărul n.</p>
+  
+  <h2>Date de ieşire</h2>
+  <p>Programul va afișa pe ecran numărul natural r, reprezentând rădăcina pătrată a lui n.</p>
+
+  <h2>Restricţii şi precizări</h2>
+  <p>1 ≤ n ≤ 1000</p>
+  <p>în fiecare test numărul n va fi pătrat perfect</p>
+  <h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+9
+Ieșire
+
+3
+</pre>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;
+int main()
+{
+    int n,r;
+    cin&gt;&gt;n;
+    r=sqrt(n);
+    cout&lt;&lt;r;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

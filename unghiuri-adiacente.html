@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 2593: unghiuri adiacente - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+  h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 2593: unghiuri adiacente - solutie</h1>
+  <h2>Cerinta</h2>
+  <p>Se dă un segment care are punct comun cu o dreaptă. Dându-se x reprezentând gradele unuia dintre unghiurile dintre dreaptă și segment, să se determine valoarea celui de-al doilea unghi.</p>
+  
+  <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numărul x reprezentând gradele unuia dintre unghiuri.</p>
+  
+  <h2>Date de ieşire</h2>
+  <p>Programul va afișa pe ecran numărul y reprezentând valoarea exprimată in grade.</p>
+
+  <h2>Restricţii şi precizări</h2>
+  <p>1 ≤ a ≤ 179</p>
+  <h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+25
+Ieșire
+
+155
+</pre>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int x,y;
+    cin&gt;&gt;x;
+    y=180-x;
+    cout&lt;&lt;y;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>

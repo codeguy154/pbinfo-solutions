@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 3810: sfera - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+  h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 3810: sfera - solutie</h1>
+  <h2>Cerinta</h2>
+  <p>Se dă raza unei sfere. Aflați aria și volumul sferei.</p>
+  
+  <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numărul r, reprezentând raza sferei.</p>
+  
+  <h2>Date de ieşire</h2>
+  <p>Programul va afișa pe ecran numerele A și V, reprezentând aria și volumul sferei, cu 2 zecimale exacte, fără rotunjire.</p>
+
+  <h2>Restricţii şi precizări</h2>
+  <p>1 ≤ r ≤ 1000</p>
+  <h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+5
+Ieșire
+
+314.15 523.59
+</pre>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+#include &lt;math.h&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+int main()
+{
+    double r,A,V;
+    cin&gt;&gt;r;
+    A=(4*M_PI*r*r);
+    V=(4*M_PI*r*r*r)/3;
+    A=A*100;
+    V=V*100;
+    A = (long long) A;
+    V= (long long)  V;
+    A = A/100;
+    V = V/100;
+    cout&lt;&lt;fixed&lt;&lt;setprecision(2)&lt;&lt;A&lt;&lt;" ";
+    cout&lt;&lt;fixed&lt;&lt;setprecision(2)&lt;&lt;V;
+    return 0;
+
+}
+  </code></pre>
+</body>
+</html>

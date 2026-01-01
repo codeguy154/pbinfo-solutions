@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PBInfo 2600: expatr - solutie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
+    a { color: #2a7ae2; }
+  h2 {
+    color: #f59c02;  
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">&larr; Back to list</a>
+  <h1>PBInfo 2600: expatr - solutie</h1>
+  <h2>Cerinta</h2>
+  <p>Scrieți un program care citește de la tastatură un număr natural a și care afișează partea întreagă a valorii expresiei (3*(a^2+a^4))/(a^2+a^4+sqrt(a^2+a^4))+sqrt(a^2+a^4).</p>
+  
+  <h2>Date de intrare</h2>
+  <p>Programul citește de la tastatură numărul a.</p>
+  
+  <h2>Date de ieşire</h2>
+  <p>Programul va afișa pe ecran numărul un număr natural, reprezentând rezultatul cerut.</p>
+
+  <h2>Restricţii şi precizări</h2>
+  <p>1 ≤ a ≤ 100</p>
+  <h2>Exemplu:</h2>
+  <pre>
+Intrare
+
+2
+Ieșire
+
+6
+</pre>
+  <h2>Solutie</h2>
+  <pre><code>
+#include &lt;iostream&gt;
+#include &lt;math.h&gt;
+using namespace std;
+int main()
+{
+    int a,b;
+    cin&gt;&gt;a;
+    b=(3*pow(a,2)+3*pow(a,4))/(pow(a,2)+pow(a,4)+sqrt(pow(a,2)+pow(a,4)))+sqrt(pow(a,2)+pow(a,4));
+    cout&lt;&lt;b;
+    return 0;
+}
+  </code></pre>
+</body>
+</html>
